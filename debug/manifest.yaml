@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debug
+spec:
+  containers:
+  # docker run -d --name nginx nginx
+  - name: debug
+    image: madhupitchapati/debug:v1
