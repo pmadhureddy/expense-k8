@@ -36,7 +36,7 @@ spec:
       image: madhupitchapati/backend:v1
       envFrom:
       - ConfigMapRef:
-          name:  backend
+           name:  backend
       ports: 
       - containerPort: 80
 
