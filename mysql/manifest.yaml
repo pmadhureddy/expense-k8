@@ -26,3 +26,21 @@ spec:
       image: madhupitchapati/mysql:v1
       ports: 
       - containerPort: 80
+
+---
+
+kind: Service
+apiVersion: v1
+metadata: 
+  name: mysql
+  namespace: expense
+spec: 
+  selector: 
+    app: mysql
+    tier: db
+    project: expense
+  ports: 
+  - name: mysql-port
+    protocol: TCP
+    port: 3306 #Service Port
+    targetPort: 3306 #container Port
