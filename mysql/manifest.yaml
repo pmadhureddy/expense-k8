@@ -3,10 +3,10 @@ apiVersion: apps/v1
 metadata: 
  name: mysql
  namespace: expense
-labels: 
- app: mysql
- tier: db
- project: expense
+ labels: 
+  app: mysql
+  tier: db
+  project: expense
 spec: 
   replicas: 1
   selector:
