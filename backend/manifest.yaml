@@ -28,7 +28,7 @@ spec:
    metadata: 
     labels: 
      app: backend
-     tier: db
+     tier: api
      project: expense
    spec: 
     containers: 
