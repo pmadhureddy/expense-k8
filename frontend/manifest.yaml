@@ -22,7 +22,7 @@ spec:
     labels: 
      app: frontend
      tier: web
-     project: expensee
+     project: expense
    spec: 
     containers: 
     - name: frontend
